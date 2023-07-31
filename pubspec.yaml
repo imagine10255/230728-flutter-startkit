@@ -1,4 +1,4 @@
-name: flutter_application_1
+name: native_kit
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -30,11 +30,28 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  flutter_localizations:
+      sdk: flutter
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  flutter_redux: 0.10.0
+  redux: ^5.0.0
+  json_annotation: ^4.8.1
+  copy_with_extension: ^5.0.3
+  redux_remote_devtools: ^3.0.0
+  flutter_dotenv: ^5.1.0
+  dio: ^5.3.0
+  image_gallery_saver: ^2.0.3
+  one_context: ^2.1.0
+  jwt_decoder: ^2.0.1
+  url_launcher: ^6.1.12
+  flutter_inappwebview: ^5.7.2+3
+  flutter_svg: ^2.0.7
+  day: ^0.8.0
+  redux_saga: ^3.1.0
+  package_info: ^2.0.2
 
 dev_dependencies:
   flutter_test:
@@ -57,7 +74,14 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-
+  assets:
+      - .env
+      - assets/images/
+      - assets/images/icon_svg/
+      - assets/images/national_flag/
+      - assets/sites/runner/
+      - assets/sites/dct_thailand/
+      - assets/sites/dct_philippines/
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
